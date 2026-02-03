@@ -166,8 +166,10 @@ A complete example showing how to deploy a basic Azure infrastructure setup.
 3. **Naming Conventions**: Follow Azure naming conventions for resources
 4. **Tagging**: Always tag resources for better organization and cost tracking
 5. **Modules**: Use modules for reusable infrastructure patterns
-6. **Version Pinning**: Pin provider versions to avoid breaking changes
+6. **Version Pinning**: Pin provider versions to avoid breaking changes (commit `.terraform.lock.hcl`)
 7. **Plan Review**: Always review `terraform plan` output before applying
+8. **Secrets Management**: Never output sensitive values like access keys. Use Azure Key Vault or managed identities for accessing storage accounts and other resources
+9. **Resource Protection**: Enable deletion protection for production resource groups
 
 ## 🤝 Contributing
 
