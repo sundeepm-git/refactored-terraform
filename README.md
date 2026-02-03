@@ -159,6 +159,23 @@ A complete example showing how to deploy a basic Azure infrastructure setup.
 
 **Usage**: See [example documentation](examples/basic_infrastructure/README.md)
 
+## 🔄 CI/CD Integration
+
+This repository includes a GitHub Actions workflow for automated Terraform validation and security scanning.
+
+**Workflow**: `.github/workflows/terraform-ci.yml`
+
+The workflow:
+- Validates Terraform formatting
+- Runs `terraform init` and `terraform validate`
+- Generates Terraform plans for pull requests
+- Performs security scanning with Trivy
+
+To use the workflow, configure these GitHub secrets:
+- `AZURE_CLIENT_ID`
+- `AZURE_SUBSCRIPTION_ID`
+- `AZURE_TENANT_ID`
+
 ## 🔒 Best Practices
 
 1. **State Management**: Use remote state storage (Azure Storage Account) for team collaboration
@@ -170,6 +187,8 @@ A complete example showing how to deploy a basic Azure infrastructure setup.
 7. **Plan Review**: Always review `terraform plan` output before applying
 8. **Secrets Management**: Never output sensitive values like access keys. Use Azure Key Vault or managed identities for accessing storage accounts and other resources
 9. **Resource Protection**: Enable deletion protection for production resource groups
+
+For more security best practices, see [SECURITY.md](SECURITY.md).
 
 ## 🤝 Contributing
 
