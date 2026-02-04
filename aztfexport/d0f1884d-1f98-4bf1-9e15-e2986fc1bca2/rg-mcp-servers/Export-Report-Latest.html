@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure to Terraform Export Report - rg-mcp-servers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4472C4 0%, #2E5090 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            background: #D9E1F2;
+            padding: 15px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2E5090;
+            border-left: 5px solid #4472C4;
+            margin-bottom: 20px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            background: #F8F9FA;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #4472C4;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #2E5090;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            color: #333;
+            font-size: 16px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        table thead {
+            background: #4472C4;
+            color: white;
+        }
+        
+        table th {
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        table tbody tr {
+            border-bottom: 1px solid #E0E0E0;
+        }
+        
+        table tbody tr:hover {
+            background: #F5F5F5;
+        }
+        
+        table td {
+            padding: 12px;
+            font-size: 13px;
+        }
+        
+        .status-managed {
+            background: #28A745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        
+        .status-reference {
+            background: #FFC107;
+            color: #333;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        
+        .file-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .file-list li {
+            background: #F8F9FA;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-left: 3px solid #4472C4;
+            border-radius: 3px;
+        }
+        
+        .file-status {
+            color: #28A745;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: #F8F9FA;
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .type-count {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 15px;
+            background: #F8F9FA;
+            margin-bottom: 5px;
+            border-radius: 3px;
+        }
+        
+        .type-name {
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .type-number {
+            font-weight: bold;
+            color: #4472C4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Azure to Terraform Export Report</h1>
+            <p>Resource Group: rg-mcp-servers</p>
+        </div>
+        
+        <div class="content">
+            <!-- Export Information Section -->
+            <div class="section">
+                <div class="section-title">Export Information</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Subscription Name</div>
+                        <div class="info-value">Enterprise-Enrollment-Subscription</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Subscription ID</div>
+                        <div class="info-value">d0f1884d-1f98-4bf1-9e15-e2986fc1bca2</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Resource Group</div>
+                        <div class="info-value">rg-mcp-servers</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Export Date</div>
+                        <div class="info-value">2026-02-04</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Export Time</div>
+                        <div class="info-value">02/04/2026 15:22:45</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Duration</div>
+                        <div class="info-value">00:05:58</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resource Summary Section -->
+            <div class="section">
+                <div class="section-title">Resource Summary</div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Total Exported Resources</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Managed Resources</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Reference Resources</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Data Sources</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Terraform Files Section -->
+            <div class="section">
+                <div class="section-title">Terraform Files Generated</div>
+                <div class="info-item" style="margin-bottom: 15px;">
+                    <div class="info-label">Output Directory</div>
+                    <div class="info-value">C:\Users\sunsu\AppData\Local\Temp\aztf-export\rg-mcp-servers-20260204-152238</div>
+                </div>
+                <ul class="file-list">
+                    <li><strong>main.tf</strong> - <span class="file-status">✓ Generated</span> - Resource definitions</li>
+                    <li><strong>provider.tf</strong> - <span class="file-status">✓ Generated</span> - Azure provider configuration</li>
+                    <li><strong>terraform.tf</strong> - <span class="file-status">✓ Generated</span> - Terraform settings</li>
+                    <li><strong>data-sources.tf</strong> - Not Generated - Data sources (reference-only)</li>
+                    <li><strong>terraform.tfstate</strong> - <span class="file-status">✓ Generated</span> - State file</li>
+                </ul>
+            </div>
+            
+            <!-- Managed Resources by Type -->
+            <div class="section">
+                <div class="section-title">Managed Resources by Type</div>                <div class="type-count">
+                    <span class="type-name">azurerm_container_registry_scope_map</span>
+                    <span class="type-number">5</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_storage_container</span>
+                    <span class="type-number">3</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_container_app</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_container_app_environment</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_container_registry</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_log_analytics_workspace</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_resource_group</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_storage_account</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_storage_account_queue_properties</span>
+                    <span class="type-number">1</span>
+                </div>            </div>
+            
+            <!-- Reference Resources by Type -->
+            <div class="section">
+                <div class="section-title">Reference Resources by Type</div><p style="color: #666; font-style: italic;">No reference resources found.</p>            </div>
+            
+            <!-- Detailed Resource Listing -->
+            <div class="section">
+                <div class="section-title">Exported Resources - Detailed Listing</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Resource Name</th>
+                            <th>Resource Type</th>
+                            <th>Status</th>
+                            <th>File</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        <tr>
+                            <td>res-0</td>
+                            <td>azurerm_resource_group</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-1</td>
+                            <td>azurerm_container_app</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-2</td>
+                            <td>azurerm_container_app_environment</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-3</td>
+                            <td>azurerm_container_registry</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-4</td>
+                            <td>azurerm_container_registry_scope_map</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-5</td>
+                            <td>azurerm_container_registry_scope_map</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-6</td>
+                            <td>azurerm_container_registry_scope_map</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-7</td>
+                            <td>azurerm_container_registry_scope_map</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-8</td>
+                            <td>azurerm_container_registry_scope_map</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-9</td>
+                            <td>azurerm_log_analytics_workspace</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-684</td>
+                            <td>azurerm_storage_account</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-686</td>
+                            <td>azurerm_storage_container</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-687</td>
+                            <td>azurerm_storage_container</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-688</td>
+                            <td>azurerm_storage_container</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-690</td>
+                            <td>azurerm_storage_account_queue_properties</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Data Sources / Reference Only Resources -->
+            <div class="section">
+                <div class="section-title">Data Sources - Reference Only</div><p style="color: #666; font-style: italic;">No data sources found.</p>            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Report Generated: 2026-02-04 15:28:33</p>
+            <p>Azure to Terraform Export Tool</p>
+        </div>
+    </div>
+</body>
+</html>
