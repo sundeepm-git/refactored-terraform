@@ -5,9 +5,9 @@
 **Resource Group:** rg-mcp-servers
 
 ## Processed Files
-- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_cj_3u3e5\source\main.tf
-- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_cj_3u3e5\source\provider.tf
-- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_cj_3u3e5\source\terraform.tf
+- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_8dzijafn\source\main.tf
+- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_8dzijafn\source\provider.tf
+- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_8dzijafn\source\terraform.tf
 
 ## Variable Mapping Table
 | Variable | variables.tf | terraform.tfvars | main.tf | Reason |
