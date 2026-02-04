@@ -592,55 +592,67 @@ variable "azurerm_storage_container_res_687_name" {
 
 
 # ---------------------------------------------------------------------------
-# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 689 HOUR METRICS0
+# AZURERM STORAGE CONTAINER RES 688
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_storage_account_queue_properties_res_689_hour_metrics0_version" {
+variable "azurerm_storage_container_res_688_name" {
   type        = string
-  description = "Version for the azurerm storage account queue properties res 689 hour metrics0."
+  description = "Name for the azurerm storage container res 688."
 }
 
 
 
 # ---------------------------------------------------------------------------
-# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 689 LOGGING0
+# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 690 HOUR METRICS0
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_storage_account_queue_properties_res_689_logging0_delete" {
-  type        = bool
-  description = "Delete for the azurerm storage account queue properties res 689 logging0."
-}
-
-
-variable "azurerm_storage_account_queue_properties_res_689_logging0_read" {
-  type        = bool
-  description = "Read for the azurerm storage account queue properties res 689 logging0."
-}
-
-
-variable "azurerm_storage_account_queue_properties_res_689_logging0_version" {
+variable "azurerm_storage_account_queue_properties_res_690_hour_metrics0_version" {
   type        = string
-  description = "Version for the azurerm storage account queue properties res 689 logging0."
+  description = "Version for the azurerm storage account queue properties res 690 hour metrics0."
 }
 
 
-variable "azurerm_storage_account_queue_properties_res_689_logging0_write" {
+
+# ---------------------------------------------------------------------------
+# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 690 LOGGING0
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_storage_account_queue_properties_res_690_logging0_delete" {
   type        = bool
-  description = "Write for the azurerm storage account queue properties res 689 logging0."
+  description = "Delete for the azurerm storage account queue properties res 690 logging0."
+}
+
+
+variable "azurerm_storage_account_queue_properties_res_690_logging0_read" {
+  type        = bool
+  description = "Read for the azurerm storage account queue properties res 690 logging0."
+}
+
+
+variable "azurerm_storage_account_queue_properties_res_690_logging0_version" {
+  type        = string
+  description = "Version for the azurerm storage account queue properties res 690 logging0."
+}
+
+
+variable "azurerm_storage_account_queue_properties_res_690_logging0_write" {
+  type        = bool
+  description = "Write for the azurerm storage account queue properties res 690 logging0."
 }
 
 
 
 # ---------------------------------------------------------------------------
-# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 689 MINUTE METRICS0
+# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 690 MINUTE METRICS0
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_storage_account_queue_properties_res_689_minute_metrics0_version" {
+variable "azurerm_storage_account_queue_properties_res_690_minute_metrics0_version" {
   type        = string
-  description = "Version for the azurerm storage account queue properties res 689 minute metrics0."
+  description = "Version for the azurerm storage account queue properties res 690 minute metrics0."
 }
 
 
