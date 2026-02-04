@@ -1,0 +1,27 @@
+# Terraform sensitive files - DO NOT commit to GitHub
+# These files contain secrets and should only be stored in Azure Blob Storage
+
+# State files contain sensitive data
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+
+# Main.tf may contain hardcoded secrets (Azure keys, passwords, etc.)
+# Uncomment the line below if your main.tf contains secrets
+main.tf
+
+# Variable values that may contain sensitive data
+# terraform.tfvars should be excluded if it contains real secrets
+# Uncomment the line below if needed
+# terraform.tfvars
+
+# Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Crash log files
+crash.log
+
+# Sensitive export reports that may contain keys
+**/Export-Report*.html
