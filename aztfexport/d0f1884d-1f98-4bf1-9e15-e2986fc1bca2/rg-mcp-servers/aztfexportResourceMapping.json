@@ -14,64 +14,239 @@
 		"resource_type": "azurerm_container_app_environment",
 		"resource_name": "res-2"
 	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109",
+		"resource_type": "azurerm_container_registry",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_admin": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_admin",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-4"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_pull": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_pull",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-5"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_pull_metadata_read": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_pull_metadata_read",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-6"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_push": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_push",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-7"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_push_metadata_write": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp1109/scopeMaps/_repositories_push_metadata_write",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-8"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448",
+		"resource_type": "azurerm_container_registry",
+		"resource_name": "res-9"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_admin": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_admin",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-10"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_pull": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_pull",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-11"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_pull_metadata_read": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_pull_metadata_read",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-12"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_push": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_push",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-13"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_push_metadata_write": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp2448/scopeMaps/_repositories_push_metadata_write",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-14"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473",
+		"resource_type": "azurerm_container_registry",
+		"resource_name": "res-15"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_admin": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_admin",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-16"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_pull": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_pull",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-17"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_pull_metadata_read": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_pull_metadata_read",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-18"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_push": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_push",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-19"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_push_metadata_write": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp4473/scopeMaps/_repositories_push_metadata_write",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-20"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282",
+		"resource_type": "azurerm_container_registry",
+		"resource_name": "res-21"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_admin": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_admin",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-22"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_pull": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_pull",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-23"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_pull_metadata_read": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_pull_metadata_read",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-24"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_push": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_push",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-25"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_push_metadata_write": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp6282/scopeMaps/_repositories_push_metadata_write",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-26"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454",
+		"resource_type": "azurerm_container_registry",
+		"resource_name": "res-27"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_admin": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_admin",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-28"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_pull": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_pull",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-29"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_pull_metadata_read": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_pull_metadata_read",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-30"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_push": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_push",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-31"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_push_metadata_write": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp7454/scopeMaps/_repositories_push_metadata_write",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-32"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739",
+		"resource_type": "azurerm_container_registry",
+		"resource_name": "res-33"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_admin": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_admin",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-34"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_pull": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_pull",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-35"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_pull_metadata_read": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_pull_metadata_read",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-36"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_push": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_push",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-37"
+	},
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_push_metadata_write": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/acraztfmcp8739/scopeMaps/_repositories_push_metadata_write",
+		"resource_type": "azurerm_container_registry_scope_map",
+		"resource_name": "res-38"
+	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr",
 		"resource_type": "azurerm_container_registry",
-		"resource_name": "res-3"
+		"resource_name": "res-39"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_admin": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_admin",
 		"resource_type": "azurerm_container_registry_scope_map",
-		"resource_name": "res-4"
+		"resource_name": "res-40"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_pull": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_pull",
 		"resource_type": "azurerm_container_registry_scope_map",
-		"resource_name": "res-5"
+		"resource_name": "res-41"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_pull_metadata_read": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_pull_metadata_read",
 		"resource_type": "azurerm_container_registry_scope_map",
-		"resource_name": "res-6"
+		"resource_name": "res-42"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_push": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_push",
 		"resource_type": "azurerm_container_registry_scope_map",
-		"resource_name": "res-7"
+		"resource_name": "res-43"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_push_metadata_write": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.ContainerRegistry/registries/aztfmcpacr/scopeMaps/_repositories_push_metadata_write",
 		"resource_type": "azurerm_container_registry_scope_map",
-		"resource_name": "res-8"
-	},
-	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.OperationalInsights/workspaces/workspace-rgmcpserversIh7a": {
-		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.OperationalInsights/workspaces/workspace-rgmcpserversIh7a",
-		"resource_type": "azurerm_log_analytics_workspace",
-		"resource_name": "res-9"
+		"resource_name": "res-44"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage",
 		"resource_type": "azurerm_storage_account",
-		"resource_name": "res-684"
+		"resource_name": "res-720"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage/blobServices/default/containers/assessment-reports": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage/blobServices/default/containers/assessment-reports",
 		"resource_type": "azurerm_storage_container",
-		"resource_name": "res-686"
+		"resource_name": "res-722"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage/blobServices/default/containers/aztfexport": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage/blobServices/default/containers/aztfexport",
 		"resource_type": "azurerm_storage_container",
-		"resource_name": "res-687"
+		"resource_name": "res-723"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage/blobServices/default/containers/code-refactored": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage/blobServices/default/containers/code-refactored",
 		"resource_type": "azurerm_storage_container",
-		"resource_name": "res-688"
+		"resource_name": "res-724"
 	},
 	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage/queueServices/default": {
 		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.Storage/storageAccounts/samcpstorage",
 		"resource_type": "azurerm_storage_account_queue_properties",
-		"resource_name": "res-690"
+		"resource_name": "res-726"
 	}
 }
