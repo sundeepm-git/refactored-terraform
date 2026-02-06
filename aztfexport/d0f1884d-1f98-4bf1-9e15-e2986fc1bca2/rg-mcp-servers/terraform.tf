@@ -5,14 +5,14 @@
 #   Terraform backend and required provider version constraints.
 #
 # GENERATED:
-#   Date: 2026-02-05 16:24:48
-#   By: sunsu (sun.study29@gmail.com)
+#   Date: 2026-02-06 12:07:09
+#   By: sunsu (4a7f6b45-8322-4cfe-bd16-008afdcc1221)
 #   Tool: Azure to Terraform Export (aztfexport)
 #
 # MODIFICATION HISTORY:
 #   Date       | Modified By | Description
 #   -----------|-------------|--------------------------------------------
-#   2026-02-05 16:24:48 | sunsu (sun.study29@gmail.com) | Initial export from Azure
+#   2026-02-06 12:07:09 | sunsu (4a7f6b45-8322-4cfe-bd16-008afdcc1221) | Initial export from Azure
 #
 # NOTES:
 #   - This file was automatically generated from existing Azure resources
