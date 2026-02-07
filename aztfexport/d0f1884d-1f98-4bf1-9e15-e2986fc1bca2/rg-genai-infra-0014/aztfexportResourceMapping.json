@@ -1,0 +1,7 @@
+{
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-genai-infra-0014/providers/Microsoft.CognitiveServices/accounts/fndry-new-interface-001-resource/projects/fndry-new-interface-001": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-genai-infra-0014/providers/Microsoft.CognitiveServices/accounts/fndry-new-interface-001-resource/projects/fndry-new-interface-001",
+		"resource_type": "azurerm_cognitive_account_project",
+		"resource_name": "res-0"
+	}
+}
