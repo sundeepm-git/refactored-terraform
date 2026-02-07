@@ -75,11 +75,11 @@
                     </div>
                     <div class="info-item">
                         <div class="info-label">Export Time</div>
-                        <div class="info-value">20:04:56</div>
+                        <div class="info-value">20:45:27</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Duration</div>
-                        <div class="info-value">00:00:53</div>
+                        <div class="info-value">00:05:25</div>
                     </div>
                 </div>
             </div>
@@ -89,11 +89,11 @@
                 <div class="section-title">Resource Summary</div>
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-number">0</div>
+                        <div class="stat-number">4</div>
                         <div class="stat-label">Total Exported Resources</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">0</div>
+                        <div class="stat-number">4</div>
                         <div class="stat-label">Managed Resources</div>
                     </div>
                     <div class="stat-card">
@@ -101,7 +101,7 @@
                         <div class="stat-label">Reference Resources</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">0</div>
+                        <div class="stat-number">1</div>
                         <div class="stat-label">Data Sources</div>
                     </div>
                 </div>
@@ -115,17 +115,29 @@
                     <div class="info-value">C:\Users\sunsu\OneDrive\Desktop\Sundeep\AI-Projects\ai-Repository\Generative-AI-Projects\aiaNextGen-Products\ai-agents\az-tf-migration\apps-mcp-server\azure-export\Enterprise-Enrollment-Subscription\rg-mcp-servers</div>
                 </div>
                 <ul class="file-list">
-                    <li><strong>main.tf</strong> - Not Generated - Resource definitions</li>
+                    <li><strong>main.tf</strong> - <span class="file-status">✓ Generated</span> - Resource definitions</li>
                     <li><strong>provider.tf</strong> - <span class="file-status">✓ Generated</span> - Azure provider configuration</li>
                     <li><strong>terraform.tf</strong> - <span class="file-status">✓ Generated</span> - Terraform settings</li>
-                    <li><strong>data-sources.tf</strong> - Not Generated - Data sources (reference-only)</li>
-                    <li><strong>terraform.tfstate</strong> - Not Generated - State file</li>
+                    <li><strong>data-sources.tf</strong> - <span class="file-status">✓ Generated</span> - Data sources (reference-only)</li>
+                    <li><strong>terraform.tfstate</strong> - <span class="file-status">✓ Generated</span> - State file</li>
                 </ul>
             </div>
             
             <!-- Managed Resources by Type -->
             <div class="section">
-                <div class="section-title">Managed Resources by Type</div><p style="color: #666; font-style: italic;">No managed resources found.</p>            </div>
+                <div class="section-title">Managed Resources by Type</div>                <div class="type-count">
+                    <span class="type-name">azurerm_container_app</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_container_app_environment</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_container_registry</span>
+                    <span class="type-number">1</span>
+                </div>                <div class="type-count">
+                    <span class="type-name">azurerm_storage_account</span>
+                    <span class="type-number">1</span>
+                </div>            </div>
             
             <!-- Reference Resources by Type -->
             <div class="section">
@@ -144,17 +156,58 @@
                             <th>Description</th>
                         </tr>
                     </thead>
-                    <tbody>                    </tbody>
+                    <tbody>                        <tr>
+                            <td>res-0</td>
+                            <td>azurerm_storage_account</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-0</td>
+                            <td>azurerm_container_app_environment</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-0</td>
+                            <td>azurerm_container_registry</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                        <tr>
+                            <td>res-0</td>
+                            <td>azurerm_container_app</td>
+                            <td><span class="status-managed">Managed</span></td>
+                            <td>main.tf</td>
+                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
+                        </tr>                    </tbody>
                 </table>
             </div>
             
             <!-- Data Sources / Reference Only Resources -->
             <div class="section">
-                <div class="section-title">Data Sources - Reference Only</div><p style="color: #666; font-style: italic;">No data sources found.</p>            </div>
+                <div class="section-title">Data Sources - Reference Only</div>                <table>
+                    <thead>
+                        <tr>
+                            <th>Resource Name</th>
+                            <th>Resource Type</th>
+                            <th>Azure Resource ID</th>
+                            <th>File</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        <tr>
+                            <td>workspace_rgmcpserversIh7a</td>
+                            <td>azurerm_log_analytics_workspace</td>
+                            <td>Referenced in data-sources.tf</td>
+                            <td>data-sources.tf</td>
+                            <td>DATA SOURCE - Existing Azure resource referenced via data-sources.tf. Terraform will NOT create/modify/destroy this resource.</td>
+                        </tr>                    </tbody>
+                </table>            </div>
         </div>
         
         <div class="footer">
-            <p>Report Generated: 2026-02-06 20:05:49</p>
+            <p>Report Generated: 2026-02-06 20:50:53</p>
             <p>Azure to Terraform Export Tool</p>
         </div>
     </div>
