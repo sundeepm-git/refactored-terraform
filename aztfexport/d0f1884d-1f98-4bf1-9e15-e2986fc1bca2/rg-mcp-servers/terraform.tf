@@ -5,14 +5,14 @@
 #   Terraform backend and required provider version constraints.
 #
 # GENERATED:
-#   Date: 2026-02-08 22:17:41
+#   Date: 2026-02-09 17:05:49
 #   By: sunsu (4a7f6b45-8322-4cfe-bd16-008afdcc1221)
 #   Tool: Azure to Terraform Export (aztfexport)
 #
 # MODIFICATION HISTORY:
 #   Date       | Modified By | Description
 #   -----------|-------------|--------------------------------------------
-#   2026-02-08 22:17:41 | sunsu (4a7f6b45-8322-4cfe-bd16-008afdcc1221) | Initial export from Azure
+#   2026-02-09 17:05:49 | sunsu (4a7f6b45-8322-4cfe-bd16-008afdcc1221) | Initial export from Azure
 #
 # NOTES:
 #   - This file was automatically generated from existing Azure resources
@@ -20,13 +20,12 @@
 #   - Sensitive values may need to be parameterized
 # ==============================================================================
 terraform {
-  backend "local" {}
-
+  required_version = ">= 1.0.0"
+  
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
-      version = "4.58.0"
-
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
     }
   }
 }
