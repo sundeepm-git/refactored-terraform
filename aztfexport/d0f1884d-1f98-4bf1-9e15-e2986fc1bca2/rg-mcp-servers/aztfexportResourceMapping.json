@@ -1,7 +1,7 @@
 {
-	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.App/containerApps/aztf-mcp-app": {
-		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.App/containerApps/aztf-mcp-app",
-		"resource_type": "azurerm_container_app",
+	"/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.App/managedEnvironments/mcp-aca-env": {
+		"resource_id": "/subscriptions/d0f1884d-1f98-4bf1-9e15-e2986fc1bca2/resourceGroups/rg-mcp-servers/providers/Microsoft.App/managedEnvironments/mcp-aca-env",
+		"resource_type": "azurerm_container_app_environment",
 		"resource_name": "res-0"
 	}
 }
