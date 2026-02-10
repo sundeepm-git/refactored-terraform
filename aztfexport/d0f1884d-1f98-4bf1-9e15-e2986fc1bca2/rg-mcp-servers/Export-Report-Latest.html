@@ -32,14 +32,10 @@
         table td { padding: 12px; font-size: 13px; }
         .status-managed { background: #28A745; color: white; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: bold; display: inline-block; }
         .status-reference { background: #FFC107; color: #333; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: bold; display: inline-block; }
-        .success { background-color: #dff6dd; color: #107c10; font-weight: bold; padding: 8px; }
-        .warning { background-color: #fff4ce; color: #795e00; font-weight: bold; padding: 8px; }
-        .neutral { background-color: #f3f2f1; color: #323130; padding: 8px; }
         .type-count { display: flex; justify-content: space-between; padding: 10px 15px; background: #F8F9FA; margin-bottom: 5px; border-radius: 3px; border-left: 3px solid #4472C4; }
         .type-name { font-weight: 500; color: #333; }
         .type-number { font-weight: bold; color: #4472C4; background: white; padding: 2px 8px; border-radius: 3px; }
         .footer { background: #F8F9FA; padding: 20px 30px; text-align: center; color: #666; font-size: 14px; border-top: 2px solid #E0E0E0; }
-        .highlight-box { background: #E3F2FD; border-left: 4px solid #2196F3; padding: 15px; margin: 15px 0; border-radius: 4px; }
         .file-list { list-style: none; padding-left: 0; }
         .file-list li { background: #F8F9FA; padding: 10px 15px; margin-bottom: 8px; border-left: 3px solid #4472C4; border-radius: 3px; }
         .file-status { color: #28A745; font-weight: bold; }
@@ -71,15 +67,15 @@
                     </div>
                     <div class="info-item">
                         <div class="info-label">Export Date</div>
-                        <div class="info-value">2026-02-09</div>
+                        <div class="info-value">2026-02-10</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Export Time</div>
-                        <div class="info-value">22:42:17</div>
+                        <div class="info-value">00:34:13</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Duration</div>
-                        <div class="info-value">00:07:27</div>
+                        <div class="info-value">00:06:58</div>
                     </div>
                 </div>
             </div>
@@ -101,7 +97,7 @@
                         <div class="stat-label">Reference Resources</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">1</div>
+                        <div class="stat-number">0</div>
                         <div class="stat-label">Data Sources</div>
                     </div>
                 </div>
@@ -139,10 +135,6 @@
                     <span class="type-number">1</span>
                 </div>            </div>
             
-            <!-- Reference Resources by Type -->
-            <div class="section">
-                <div class="section-title">Reference Resources by Type</div><p style="color: #666; font-style: italic;">No reference resources found.</p>            </div>
-            
             <!-- Detailed Resource Listing -->
             <div class="section">
                 <div class="section-title">Exported Resources - Detailed Listing</div>
@@ -153,7 +145,6 @@
                             <th>Resource Type</th>
                             <th>Status</th>
                             <th>File</th>
-                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>                        <tr>
@@ -161,54 +152,29 @@
                             <td>azurerm_storage_account</td>
                             <td><span class="status-managed">Managed</span></td>
                             <td>main.tf</td>
-                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
                         </tr>                        <tr>
                             <td>res-0</td>
                             <td>azurerm_container_app_environment</td>
                             <td><span class="status-managed">Managed</span></td>
                             <td>main.tf</td>
-                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
                         </tr>                        <tr>
                             <td>res-0</td>
                             <td>azurerm_container_registry</td>
                             <td><span class="status-managed">Managed</span></td>
                             <td>main.tf</td>
-                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
                         </tr>                        <tr>
                             <td>res-0</td>
                             <td>azurerm_container_app</td>
                             <td><span class="status-managed">Managed</span></td>
                             <td>main.tf</td>
-                            <td>MANAGED - Will be fully managed by Terraform (create/update/destroy).</td>
                         </tr>                    </tbody>
                 </table>
             </div>
-            
-            <!-- Data Sources / Reference Only Resources -->
-            <div class="section">
-                <div class="section-title">Data Sources - Reference Only</div>                <table>
-                    <thead>
-                        <tr>
-                            <th>Resource Name</th>
-                            <th>Resource Type</th>
-                            <th>Azure Resource ID</th>
-                            <th>File</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>                        <tr>
-                            <td>workspace_rgmcpserversIh7a</td>
-                            <td>azurerm_log_analytics_workspace</td>
-                            <td>Referenced in data-sources.tf</td>
-                            <td>data-sources.tf</td>
-                            <td>DATA SOURCE - Existing Azure resource referenced via data-sources.tf. Terraform will NOT create/modify/destroy this resource.</td>
-                        </tr>                    </tbody>
-                </table>            </div>
         </div>
         
         <div class="footer">
-            <p>Report Generated: 2026-02-09 22:49:45</p>
-            <p>Azure to Terraform Export Tool</p>
+            <p>Report Generated: 2026-02-10 00:41:12</p>
+            <p>Azure to Terraform Export Tool v2.1</p>
         </div>
     </div>
 </body>
