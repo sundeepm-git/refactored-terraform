@@ -6,293 +6,97 @@
 
 
 # ---------------------------------------------------------------------------
-# AZURERM RESOURCE GROUP RES 0
+# AZURERM STORAGE ACCOUNT SAMCPSTORAGE
 # ---------------------------------------------------------------------------
 
 
-variable "rg_res_0_name" {
+variable "stg_samcpstorage_samcpstorage_account_replication_type" {
   type        = string
-  description = "Name for the azurerm resource group res 0."
+  description = "Account replication type for the azurerm storage account samcpstorage."
 }
 
 
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_max_inactive_revisions" {
-  type        = number
-  description = "Max inactive revisions for the azurerm container app res 1."
-}
-
-
-variable "azurerm_container_app_res_1_name" {
+variable "stg_samcpstorage_samcpstorage_account_tier" {
   type        = string
-  description = "Name for the azurerm container app res 1."
-}
-
-
-variable "azurerm_container_app_res_1_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm container app res 1."
-}
-
-
-variable "azurerm_container_app_res_1_revision_mode" {
-  type        = string
-  description = "Revision mode for the azurerm container app res 1."
-}
-
-
-variable "azurerm_container_app_res_1_workload_profile_name" {
-  type        = string
-  description = "Workload profile name for the azurerm container app res 1."
-}
-
-
-variable "azurerm_container_app_res_1_secret" {
-  type        = string
-  description = "Secret for the azurerm container app res 1."
-  sensitive = true
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 IDENTITY0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_identity0_type" {
-  type        = string
-  description = "Type for the azurerm container app res 1 identity0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 INGRESS0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_ingress0_external_enabled" {
-  type        = bool
-  description = "External enabled for the azurerm container app res 1 ingress0."
-}
-
-
-variable "azurerm_container_app_res_1_ingress0_target_port" {
-  type        = number
-  description = "Target port for the azurerm container app res 1 ingress0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 INGRESS0 TRAFFIC WEIGHT0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_ingress0_traffic_weight0_latest_revision" {
-  type        = bool
-  description = "Latest revision for the azurerm container app res 1 ingress0 traffic weight0."
-}
-
-
-variable "azurerm_container_app_res_1_ingress0_traffic_weight0_percentage" {
-  type        = number
-  description = "Percentage for the azurerm container app res 1 ingress0 traffic weight0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 REGISTRY0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_registry0_password_secret_name" {
-  type        = string
-  description = "Password secret name for the azurerm container app res 1 registry0."
-  sensitive = true
-}
-
-
-variable "azurerm_container_app_res_1_registry0_server" {
-  type        = string
-  description = "Server for the azurerm container app res 1 registry0."
-}
-
-
-variable "azurerm_container_app_res_1_registry0_username" {
-  type        = string
-  description = "Username for the azurerm container app res 1 registry0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 TEMPLATE0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_template0_max_replicas" {
-  type        = number
-  description = "Max replicas for the azurerm container app res 1 template0."
-}
-
-
-variable "azurerm_container_app_res_1_template0_min_replicas" {
-  type        = number
-  description = "Min replicas for the azurerm container app res 1 template0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 TEMPLATE0 CONTAINER0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_template0_container0_cpu" {
-  type        = string
-  description = "Cpu for the azurerm container app res 1 template0 container0."
-}
-
-
-variable "azurerm_container_app_res_1_template0_container0_image" {
-  type        = string
-  description = "Image for the azurerm container app res 1 template0 container0."
-}
-
-
-variable "azurerm_container_app_res_1_template0_container0_memory" {
-  type        = string
-  description = "Memory for the azurerm container app res 1 template0 container0."
-}
-
-
-variable "azurerm_container_app_res_1_template0_container0_name" {
-  type        = string
-  description = "Name for the azurerm container app res 1 template0 container0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 TEMPLATE0 CONTAINER0 ENV0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_template0_container0_env0_name" {
-  type        = string
-  description = "Name for the azurerm container app res 1 template0 container0 env0."
-}
-
-
-variable "azurerm_container_app_res_1_template0_container0_env0_value" {
-  type        = string
-  description = "Value for the azurerm container app res 1 template0 container0 env0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP RES 1 TEMPLATE0 CONTAINER0 ENV1
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_res_1_template0_container0_env1_name" {
-  type        = string
-  description = "Name for the azurerm container app res 1 template0 container0 env1."
-}
-
-
-variable "azurerm_container_app_res_1_template0_container0_env1_value" {
-  type        = string
-  description = "Value for the azurerm container app res 1 template0 container0 env1."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP ENVIRONMENT RES 2
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_environment_res_2_name" {
-  type        = string
-  description = "Name for the azurerm container app environment res 2."
-}
-
-
-variable "azurerm_container_app_environment_res_2_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm container app environment res 2."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP ENVIRONMENT RES 2 IDENTITY0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_environment_res_2_identity0_type" {
-  type        = string
-  description = "Type for the azurerm container app environment res 2 identity0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER APP ENVIRONMENT RES 2 WORKLOAD PROFILE0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_app_environment_res_2_workload_profile0_name" {
-  type        = string
-  description = "Name for the azurerm container app environment res 2 workload profile0."
-}
-
-
-variable "azurerm_container_app_environment_res_2_workload_profile0_workload_profile_type" {
-  type        = string
-  description = "Workload profile type for the azurerm container app environment res 2 workload profile0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER REGISTRY RES 3
-# ---------------------------------------------------------------------------
-
-
-variable "acr_res_3_admin_enabled" {
-  type        = bool
-  description = "Admin enabled for the azurerm container registry res 3."
-}
-
-
-variable "acr_res_3_name" {
-  type        = string
-  description = "Name for the azurerm container registry res 3."
-}
-
-
-variable "acr_res_3_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm container registry res 3."
-}
-
-
-variable "acr_res_3_sku" {
-  type        = string
-  description = "Sku for the azurerm container registry res 3."
+  description = "Account tier for the azurerm storage account samcpstorage."
   validation {
-    condition     = contains(["Basic", "Standard", "Premium"], var.acr_res_3_sku)
+    condition     = contains(["Basic", "Standard", "Premium"], var.stg_samcpstorage_samcpstorage_account_tier)
+    error_message = "SKU tier must be Basic, Standard, or Premium."
+  }
+}
+
+
+variable "stg_samcpstorage_samcpstorage_allow_nested_items_to_be_public" {
+  type        = bool
+  description = "Allow nested items to be public for the azurerm storage account samcpstorage."
+}
+
+
+variable "stg_samcpstorage_samcpstorage_cross_tenant_replication_enabled" {
+  type        = bool
+  description = "Cross tenant replication enabled for the azurerm storage account samcpstorage."
+}
+
+
+variable "stg_samcpstorage_samcpstorage_name" {
+  type        = string
+  description = "Name for the azurerm storage account samcpstorage."
+}
+
+
+variable "stg_samcpstorage_samcpstorage_resource_group_name" {
+  type        = string
+  description = "Resource group name for the azurerm storage account samcpstorage."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP ENVIRONMENT MCP ACA ENV
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_environment_mcp_aca_env_mcp_aca_env_name" {
+  type        = string
+  description = "Name for the azurerm container app environment mcp aca env."
+}
+
+
+variable "azurerm_container_app_environment_mcp_aca_env_mcp_aca_env_resource_group_name" {
+  type        = string
+  description = "Resource group name for the azurerm container app environment mcp aca env."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER REGISTRY AZTFMCPACR
+# ---------------------------------------------------------------------------
+
+
+variable "acr_aztfmcpacr_aztfmcpacr_admin_enabled" {
+  type        = bool
+  description = "Admin enabled for the azurerm container registry aztfmcpacr."
+}
+
+
+variable "acr_aztfmcpacr_aztfmcpacr_name" {
+  type        = string
+  description = "Name for the azurerm container registry aztfmcpacr."
+}
+
+
+variable "acr_aztfmcpacr_aztfmcpacr_resource_group_name" {
+  type        = string
+  description = "Resource group name for the azurerm container registry aztfmcpacr."
+}
+
+
+variable "acr_aztfmcpacr_aztfmcpacr_sku" {
+  type        = string
+  description = "Sku for the azurerm container registry aztfmcpacr."
+  validation {
+    condition     = contains(["Basic", "Standard", "Premium"], var.acr_aztfmcpacr_aztfmcpacr_sku)
     error_message = "SKU tier must be Basic, Standard, or Premium."
   }
 }
@@ -300,359 +104,483 @@ variable "acr_res_3_sku" {
 
 
 # ---------------------------------------------------------------------------
-# AZURERM CONTAINER REGISTRY SCOPE MAP RES 4
+# AZURERM CONTAINER APP AZTF MCP APP
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_container_registry_scope_map_res_4_actions" {
-  type        = list(string)
-  description = "Actions for the azurerm container registry scope map res 4."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_4_container_registry_name" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_name" {
   type        = string
-  description = "Container registry name for the azurerm container registry scope map res 4."
+  description = "Name for the azurerm container app aztf mcp app."
 }
 
 
-variable "azurerm_container_registry_scope_map_res_4_description" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_resource_group_name" {
   type        = string
-  description = "Description for the azurerm container registry scope map res 4."
+  description = "Resource group name for the azurerm container app aztf mcp app."
 }
 
 
-variable "azurerm_container_registry_scope_map_res_4_name" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_revision_mode" {
   type        = string
-  description = "Name for the azurerm container registry scope map res 4."
+  description = "Revision mode for the azurerm container app aztf mcp app."
 }
 
 
-variable "azurerm_container_registry_scope_map_res_4_resource_group_name" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_workload_profile_name" {
   type        = string
-  description = "Resource group name for the azurerm container registry scope map res 4."
+  description = "Workload profile name for the azurerm container app aztf mcp app."
 }
 
 
-variable "azurerm_container_registry_scope_map_res_4_depends_on" {
-  type        = list(string)
-  description = "Depends on for the azurerm container registry scope map res 4."
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_secret" {
+  type        = string
+  description = "Secret for the azurerm container app aztf mcp app."
+  sensitive = true
 }
 
 
 
 # ---------------------------------------------------------------------------
-# AZURERM CONTAINER REGISTRY SCOPE MAP RES 5
+# AZURERM CONTAINER APP AZTF MCP APP IDENTITY0
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_container_registry_scope_map_res_5_actions" {
-  type        = list(string)
-  description = "Actions for the azurerm container registry scope map res 5."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_5_container_registry_name" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_identity0_type" {
   type        = string
-  description = "Container registry name for the azurerm container registry scope map res 5."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_5_description" {
-  type        = string
-  description = "Description for the azurerm container registry scope map res 5."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_5_name" {
-  type        = string
-  description = "Name for the azurerm container registry scope map res 5."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_5_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm container registry scope map res 5."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_5_depends_on" {
-  type        = list(string)
-  description = "Depends on for the azurerm container registry scope map res 5."
+  description = "Type for the azurerm container app aztf mcp app identity0."
 }
 
 
 
 # ---------------------------------------------------------------------------
-# AZURERM CONTAINER REGISTRY SCOPE MAP RES 6
+# AZURERM CONTAINER APP AZTF MCP APP INGRESS0
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_container_registry_scope_map_res_6_actions" {
-  type        = list(string)
-  description = "Actions for the azurerm container registry scope map res 6."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_6_container_registry_name" {
-  type        = string
-  description = "Container registry name for the azurerm container registry scope map res 6."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_6_description" {
-  type        = string
-  description = "Description for the azurerm container registry scope map res 6."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_6_name" {
-  type        = string
-  description = "Name for the azurerm container registry scope map res 6."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_6_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm container registry scope map res 6."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_6_depends_on" {
-  type        = list(string)
-  description = "Depends on for the azurerm container registry scope map res 6."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER REGISTRY SCOPE MAP RES 7
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_registry_scope_map_res_7_actions" {
-  type        = list(string)
-  description = "Actions for the azurerm container registry scope map res 7."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_7_container_registry_name" {
-  type        = string
-  description = "Container registry name for the azurerm container registry scope map res 7."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_7_description" {
-  type        = string
-  description = "Description for the azurerm container registry scope map res 7."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_7_name" {
-  type        = string
-  description = "Name for the azurerm container registry scope map res 7."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_7_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm container registry scope map res 7."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_7_depends_on" {
-  type        = list(string)
-  description = "Depends on for the azurerm container registry scope map res 7."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM CONTAINER REGISTRY SCOPE MAP RES 8
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_container_registry_scope_map_res_8_actions" {
-  type        = list(string)
-  description = "Actions for the azurerm container registry scope map res 8."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_8_container_registry_name" {
-  type        = string
-  description = "Container registry name for the azurerm container registry scope map res 8."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_8_description" {
-  type        = string
-  description = "Description for the azurerm container registry scope map res 8."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_8_name" {
-  type        = string
-  description = "Name for the azurerm container registry scope map res 8."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_8_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm container registry scope map res 8."
-}
-
-
-variable "azurerm_container_registry_scope_map_res_8_depends_on" {
-  type        = list(string)
-  description = "Depends on for the azurerm container registry scope map res 8."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM LOG ANALYTICS WORKSPACE RES 9
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_log_analytics_workspace_res_9_name" {
-  type        = string
-  description = "Name for the azurerm log analytics workspace res 9."
-}
-
-
-variable "azurerm_log_analytics_workspace_res_9_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm log analytics workspace res 9."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM STORAGE ACCOUNT RES 684
-# ---------------------------------------------------------------------------
-
-
-variable "stg_res_684_account_replication_type" {
-  type        = string
-  description = "Account replication type for the azurerm storage account res 684."
-}
-
-
-variable "stg_res_684_account_tier" {
-  type        = string
-  description = "Account tier for the azurerm storage account res 684."
-  validation {
-    condition     = contains(["Basic", "Standard", "Premium"], var.stg_res_684_account_tier)
-    error_message = "SKU tier must be Basic, Standard, or Premium."
-  }
-}
-
-
-variable "stg_res_684_allow_nested_items_to_be_public" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_ingress0_external_enabled" {
   type        = bool
-  description = "Allow nested items to be public for the azurerm storage account res 684."
+  description = "External enabled for the azurerm container app aztf mcp app ingress0."
 }
 
 
-variable "stg_res_684_name" {
-  type        = string
-  description = "Name for the azurerm storage account res 684."
-}
-
-
-variable "stg_res_684_resource_group_name" {
-  type        = string
-  description = "Resource group name for the azurerm storage account res 684."
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_ingress0_target_port" {
+  type        = number
+  description = "Target port for the azurerm container app aztf mcp app ingress0."
 }
 
 
 
 # ---------------------------------------------------------------------------
-# AZURERM STORAGE CONTAINER RES 686
+# AZURERM CONTAINER APP AZTF MCP APP INGRESS0 TRAFFIC WEIGHT0
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_storage_container_res_686_name" {
-  type        = string
-  description = "Name for the azurerm storage container res 686."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM STORAGE CONTAINER RES 687
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_storage_container_res_687_name" {
-  type        = string
-  description = "Name for the azurerm storage container res 687."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM STORAGE CONTAINER RES 688
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_storage_container_res_688_name" {
-  type        = string
-  description = "Name for the azurerm storage container res 688."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 690 HOUR METRICS0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_storage_account_queue_properties_res_690_hour_metrics0_version" {
-  type        = string
-  description = "Version for the azurerm storage account queue properties res 690 hour metrics0."
-}
-
-
-
-# ---------------------------------------------------------------------------
-# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 690 LOGGING0
-# ---------------------------------------------------------------------------
-
-
-variable "azurerm_storage_account_queue_properties_res_690_logging0_delete" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_ingress0_traffic_weight0_latest_revision" {
   type        = bool
-  description = "Delete for the azurerm storage account queue properties res 690 logging0."
+  description = "Latest revision for the azurerm container app aztf mcp app ingress0 traffic weight0."
 }
 
 
-variable "azurerm_storage_account_queue_properties_res_690_logging0_read" {
-  type        = bool
-  description = "Read for the azurerm storage account queue properties res 690 logging0."
-}
-
-
-variable "azurerm_storage_account_queue_properties_res_690_logging0_version" {
-  type        = string
-  description = "Version for the azurerm storage account queue properties res 690 logging0."
-}
-
-
-variable "azurerm_storage_account_queue_properties_res_690_logging0_write" {
-  type        = bool
-  description = "Write for the azurerm storage account queue properties res 690 logging0."
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_ingress0_traffic_weight0_percentage" {
+  type        = number
+  description = "Percentage for the azurerm container app aztf mcp app ingress0 traffic weight0."
 }
 
 
 
 # ---------------------------------------------------------------------------
-# AZURERM STORAGE ACCOUNT QUEUE PROPERTIES RES 690 MINUTE METRICS0
+# AZURERM CONTAINER APP AZTF MCP APP REGISTRY0
 # ---------------------------------------------------------------------------
 
 
-variable "azurerm_storage_account_queue_properties_res_690_minute_metrics0_version" {
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_registry0_password_secret_name" {
   type        = string
-  description = "Version for the azurerm storage account queue properties res 690 minute metrics0."
+  description = "Password secret name for the azurerm container app aztf mcp app registry0."
+  sensitive = true
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_registry0_server" {
+  type        = string
+  description = "Server for the azurerm container app aztf mcp app registry0."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_registry0_username" {
+  type        = string
+  description = "Username for the azurerm container app aztf mcp app registry0."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_max_replicas" {
+  type        = number
+  description = "Max replicas for the azurerm container app aztf mcp app template0."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_cpu" {
+  type        = number
+  description = "Cpu for the azurerm container app aztf mcp app template0 container0."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_image" {
+  type        = string
+  description = "Image for the azurerm container app aztf mcp app template0 container0."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_memory" {
+  type        = string
+  description = "Memory for the azurerm container app aztf mcp app template0 container0."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV0
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env0_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env0."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env0_value" {
+  type        = number
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env0."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV1
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env1_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env1."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env1_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env1."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV2
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env2_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env2."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env2_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env2."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV3
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env3_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env3."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env3_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env3."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV4
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env4_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env4."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env4_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env4."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV5
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env5_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env5."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env5_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env5."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV6
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env6_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env6."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env6_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env6."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV7
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env7_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env7."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env7_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env7."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV8
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env8_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env8."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env8_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env8."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV9
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env9_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env9."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env9_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env9."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV10
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env10_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env10."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env10_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env10."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV11
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env11_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env11."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env11_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env11."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV12
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env12_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env12."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env12_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env12."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV13
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env13_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env13."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env13_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env13."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV14
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env14_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env14."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env14_value" {
+  type        = string
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env14."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV15
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env15_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env15."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env15_value" {
+  type        = bool
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env15."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV16
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env16_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env16."
+}
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env16_value" {
+  type        = bool
+  description = "Value for the azurerm container app aztf mcp app template0 container0 env16."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV17
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env17_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env17."
+}
+
+
+
+# ---------------------------------------------------------------------------
+# AZURERM CONTAINER APP AZTF MCP APP TEMPLATE0 CONTAINER0 ENV18
+# ---------------------------------------------------------------------------
+
+
+variable "azurerm_container_app_aztf_mcp_app_aztf_mcp_app_template0_container0_env18_name" {
+  type        = string
+  description = "Name for the azurerm container app aztf mcp app template0 container0 env18."
 }
 
 
