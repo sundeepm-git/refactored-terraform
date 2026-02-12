@@ -1,3 +1,3 @@
 # Failed Resources Report
 
-- **__refactor__**: name 'out_lines' is not defined
+- **__refactor__**: 'stg_samcpstorage_samcpstorage_account_replication_type'
