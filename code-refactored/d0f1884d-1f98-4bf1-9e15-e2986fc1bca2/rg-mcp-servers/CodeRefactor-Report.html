@@ -1,34 +1,118 @@
-<html><head><title>Code Refactor Report</title><style>body{font-family:sans-serif;} .pass{color:#228B22;} .fail{color:#B22222;} .block{border:1px solid #ccc;padding:8px;margin:8px 0;} .checklist{margin:16px 0;} .file-status{margin:16px 0;} table{border-collapse:collapse;} td,th{border:1px solid #ccc;padding:4px;} .section{font-weight:bold;font-size:1.1em;margin-top:16px;} </style></head><body>
-<h1>Code Refactor Report</h1><div>Date: d0f1884d-1f98-4bf1-9e15-e2986fc1bca2 | Resource Group: rg-mcp-servers</div>
-<div class='section'>File Status</div><div class='file-status'><table><tr><th>File</th><th>Status</th></tr>
-<tr><td>main.tf</td><td><span class='pass'>Success</span></td></tr>
-<tr><td>terraform.tfstate</td><td><span class='pass'>Success</span></td></tr>
-<tr><td>variables.tf</td><td><span class='pass'>Success</span></td></tr>
-<tr><td>terraform.tfvars</td><td><span class='pass'>Success</span></td></tr>
-<tr><td>data-sources.tf</td><td><span class='pass'>Success</span></td></tr>
-<tr><td>outputs.tf</td><td><span class='pass'>Success</span></td></tr>
-<tr><td>providers.tf</td><td><span class='pass'>Success</span></td></tr>
-<tr><td>locals.tf</td><td><span class='pass'>Success</span></td></tr>
-</table></div>
-<div class='section'>Checklist Validation</div><div class='checklist'><table><tr><th>Checklist Item</th><th>Result</th></tr>
-<tr><td>Sensitive fields marked sensitive in variables.tf and not present in tfvars</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>Reference resources use data blocks, not variables</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>Tags defined as map(string) variable</td><td><span class='fail'>Fail</span></td></tr>
-<tr><td>Location not parameterized unless required</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>Naming convention: <resource_abbr>_<idx>_<prop_abbr></td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>No secrets in tfvars</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>Validation blocks for region, sku, tier</td><td><span class='fail'>Fail</span></td></tr>
-<tr><td>tfvars: Only variable assignments (no resources/modules/locals)</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>tfvars: HCL format (no interpolation)</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>tfvars: No interpolation expressions</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>tfvars: Folder structure for environments (dev/test/prod)</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>tfvars: Only environment-specific values, no duplication</td><td><span class='pass'>Pass</span></td></tr>
-<tr><td>tfvars: Small and readable, only overrides</td><td><span class='pass'>Pass</span></td></tr>
-</table></div>
-<div class='section'>Failed Resources</div><div class='block'>
-# Failed Resources Report
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Refactor Report - rg-mcp-servers</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #F5F5F5; color: #333; line-height: 1.6; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 30px; text-align: center; }
+        .header h1 { font-size: 32px; margin-bottom: 10px; font-weight: 600; }
+        .header p { font-size: 16px; opacity: 0.9; }
+        .content { padding: 30px; }
+        .section { margin-bottom: 40px; background: white; border-radius: 8px; }
+        .section-title { background: #F8F9FA; padding: 15px 20px; font-size: 20px; font-weight: bold; color: #2E5090; border-left: 5px solid #4472C4; margin-bottom: 20px; border-radius: 4px; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .info-item { background: #F8F9FA; padding: 15px; border-radius: 5px; border-left: 3px solid #4472C4; }
+        .info-label { font-weight: bold; color: #2E5090; font-size: 14px; margin-bottom: 5px; }
+        .info-value { color: #333; font-size: 16px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .stat-card:hover { transform: translateY(-5px); }
+        .stat-card.warning { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .stat-card.success { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .stat-number { font-size: 36px; font-weight: bold; margin-bottom: 5px; }
+        .stat-label { font-size: 14px; opacity: 0.9; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+        table thead { background: #4472C4; color: white; }
+        table th { padding: 12px; text-align: left; font-weight: 600; font-size: 14px; }
+        table tbody tr { border-bottom: 1px solid #E0E0E0; transition: background 0.2s; }
+        table tbody tr:hover { background: #F5F5F5; }
+        table tbody tr:last-child { border-bottom: none; }
+        table td { padding: 12px; font-size: 13px; }
+        .status-pass { background: #28A745; color: white; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: bold; display: inline-block; }
+        .status-fail { background: #DC3545; color: white; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: bold; display: inline-block; }
+        .status-generated { background: #28A745; color: white; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: bold; display: inline-block; }
+        .status-missing { background: #FFC107; color: #333; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: bold; display: inline-block; }
+        .file-list { list-style: none; padding-left: 0; }
+        .file-list li { background: #F8F9FA; padding: 10px 15px; margin-bottom: 8px; border-left: 3px solid #4472C4; border-radius: 3px; display: flex; justify-content: space-between; align-items: center; }
+        .footer { background: #F8F9FA; padding: 20px 30px; text-align: center; color: #666; font-size: 14px; border-top: 2px solid #E0E0E0; }
+        .warning-box { background: #FFF3CD; border-left: 4px solid #FFC107; padding: 15px; margin-bottom: 15px; border-radius: 4px; }
+        .warning-title { font-weight: bold; color: #856404; margin-bottom: 8px; }
+        .resource-count { display: flex; justify-content: space-between; padding: 10px 15px; background: #F8F9FA; margin-bottom: 5px; border-radius: 3px; border-left: 3px solid #4472C4; }
+        .resource-name { font-weight: 500; color: #333; }
+        .resource-number { font-weight: bold; color: #4472C4; background: white; padding: 2px 8px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Terraform Code Refactor Report</h1>
+            <p>Resource Group: rg-mcp-servers</p>
+        </div>
+        <div class="content">
+            <div class="section">
+                <div class="section-title">Refactor Information</div>
+                <div class="info-grid">
+                    <div class="info-item"><div class="info-label">Subscription</div><div class="info-value">d0f1884d-1f98-4bf1-9e15-e2986fc1bca2</div></div>
+                    <div class="info-item"><div class="info-label">Resource Group</div><div class="info-value">rg-mcp-servers</div></div>
+                    <div class="info-item"><div class="info-label">Report Date</div><div class="info-value">2026-02-11</div></div>
+                    <div class="info-item"><div class="info-label">Report Time</div><div class="info-value">19:40:04</div></div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Statistics Summary</div>
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-number">4</div><div class="stat-label">Total Resources</div></div>
+                    <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Total Variables</div></div>
+                    <div class="stat-card success"><div class="stat-number">0</div><div class="stat-label">Duplicate Variables</div></div>
+                    <div class="stat-card success"><div class="stat-number">0</div><div class="stat-label">depends_on References</div></div>
+                    <div class="stat-card warning"><div class="stat-number">6/7</div><div class="stat-label">Checks Passed</div></div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Terraform Files Status</div>
+                <ul class="file-list">
+                    <li><strong>main.tf</strong> <span class="status-generated">✓ Generated</span></li><li><strong>terraform.tfstate</strong> <span class="status-generated">✓ Generated</span></li><li><strong>variables.tf</strong> <span class="status-generated">✓ Generated</span></li><li><strong>terraform.tfvars</strong> <span class="status-generated">✓ Generated</span></li><li><strong>data-sources.tf</strong> <span class="status-generated">✓ Generated</span></li><li><strong>outputs.tf</strong> <span class="status-generated">✓ Generated</span></li><li><strong>providers.tf</strong> <span class="status-generated">✓ Generated</span></li><li><strong>locals.tf</strong> <span class="status-generated">✓ Generated</span></li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Best Practice Validation</div>
+                <table>
+                    <thead><tr><th>Best Practice Check</th><th>Status</th></tr></thead>
+                    <tbody>
+                        <tr><td>Sensitive fields marked sensitive in variables.tf</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>No secrets in tfvars</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>Variables follow snake_case naming</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>No duplicate variable definitions</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>Tags defined as map(string) type</td><td><span class="status-fail">✗ Fail</span></td></tr><tr><td>tfvars uses HCL format (no interpolation)</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>depends_on uses explicit resource references</td><td><span class="status-pass">✓ Pass</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            
+            
+            
+            <div class="section"><div class="section-title">depends_on Analysis</div><p style="color: #28A745; font-weight: bold;">✓ No explicit depends_on found - Resources use implicit Terraform dependency graph.</p></div>
+            
+            <div class="section">
+                <div class="section-title">Resources by Type</div>
+                <div class="resource-count"><span class="resource-name">azurerm_storage_account</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_app_environment</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_registry</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_app</span><span class="resource-number">1</span></div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Failed Resources</div>
+                <div style="background: #F8F9FA; padding: 15px; border-radius: 4px; border-left: 3px solid #DC3545;">
+                    <pre style="white-space: pre-wrap; font-size: 12px; color: #333;"># Failed Resources Report
 
 - **__refactor__**: 'stg_samcpstorage_samcpstorage_account_replication_type'
-
-</div>
-</body></html>
+</pre>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Generated by Terraform Refactoring Engine | 2026-02-11 19:40:04</div>
+    </div>
+</body>
+</html>
