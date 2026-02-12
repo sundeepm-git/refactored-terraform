@@ -1,0 +1,34 @@
+<html><head><title>Code Refactor Report</title><style>body{font-family:sans-serif;} .pass{color:#228B22;} .fail{color:#B22222;} .block{border:1px solid #ccc;padding:8px;margin:8px 0;} .checklist{margin:16px 0;} .file-status{margin:16px 0;} table{border-collapse:collapse;} td,th{border:1px solid #ccc;padding:4px;} .section{font-weight:bold;font-size:1.1em;margin-top:16px;} </style></head><body>
+<h1>Code Refactor Report</h1><div>Date: d0f1884d-1f98-4bf1-9e15-e2986fc1bca2 | Resource Group: rg-mcp-servers</div>
+<div class='section'>File Status</div><div class='file-status'><table><tr><th>File</th><th>Status</th></tr>
+<tr><td>main.tf</td><td><span class='pass'>Success</span></td></tr>
+<tr><td>terraform.tfstate</td><td><span class='pass'>Success</span></td></tr>
+<tr><td>variables.tf</td><td><span class='pass'>Success</span></td></tr>
+<tr><td>terraform.tfvars</td><td><span class='pass'>Success</span></td></tr>
+<tr><td>data-sources.tf</td><td><span class='pass'>Success</span></td></tr>
+<tr><td>outputs.tf</td><td><span class='pass'>Success</span></td></tr>
+<tr><td>providers.tf</td><td><span class='pass'>Success</span></td></tr>
+<tr><td>locals.tf</td><td><span class='pass'>Success</span></td></tr>
+</table></div>
+<div class='section'>Checklist Validation</div><div class='checklist'><table><tr><th>Checklist Item</th><th>Result</th></tr>
+<tr><td>Sensitive fields marked sensitive in variables.tf and not present in tfvars</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>Reference resources use data blocks, not variables</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>Tags defined as map(string) variable</td><td><span class='fail'>Fail</span></td></tr>
+<tr><td>Location not parameterized unless required</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>Naming convention: <resource_abbr>_<idx>_<prop_abbr></td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>No secrets in tfvars</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>Validation blocks for region, sku, tier</td><td><span class='fail'>Fail</span></td></tr>
+<tr><td>tfvars: Only variable assignments (no resources/modules/locals)</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>tfvars: HCL format (no interpolation)</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>tfvars: No interpolation expressions</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>tfvars: Folder structure for environments (dev/test/prod)</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>tfvars: Only environment-specific values, no duplication</td><td><span class='pass'>Pass</span></td></tr>
+<tr><td>tfvars: Small and readable, only overrides</td><td><span class='pass'>Pass</span></td></tr>
+</table></div>
+<div class='section'>Failed Resources</div><div class='block'>
+# Failed Resources Report
+
+- **__refactor__**: 'stg_samcpstorage_samcpstorage_account_replication_type'
+
+</div>
+</body></html>
