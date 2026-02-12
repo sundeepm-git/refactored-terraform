@@ -5,15 +5,15 @@
 **Resource Group:** rg-mcp-servers
 
 ## Processed Files
-- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_g10jzi1p\source\data-block.tf
-- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_g10jzi1p\source\main.tf
-- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_g10jzi1p\source\provider.tf
+- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_x8zvi4lj\source\data-block.tf
+- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_x8zvi4lj\source\main.tf
+- C:\Users\sunsu\AppData\Local\Temp\aztf_refactor_x8zvi4lj\source\provider.tf
 
 ## Variable Mapping Table
 | Variable | variables.tf | terraform.tfvars | main.tf | Reason |
 |----------|-------------|------------------|---------|--------|
 
 ## Failed Resources
-- **__refactor__**: name 'out_lines' is not defined
+- **__refactor__**: 'stg_samcpstorage_samcpstorage_account_replication_type'
 
 No drift detected.
