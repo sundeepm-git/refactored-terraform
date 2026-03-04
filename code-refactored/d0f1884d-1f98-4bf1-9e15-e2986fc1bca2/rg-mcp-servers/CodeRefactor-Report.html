@@ -58,8 +58,8 @@
                 <div class="info-grid">
                     <div class="info-item"><div class="info-label">Subscription</div><div class="info-value">d0f1884d-1f98-4bf1-9e15-e2986fc1bca2</div></div>
                     <div class="info-item"><div class="info-label">Resource Group</div><div class="info-value">rg-mcp-servers</div></div>
-                    <div class="info-item"><div class="info-label">Report Date</div><div class="info-value">2026-02-11</div></div>
-                    <div class="info-item"><div class="info-label">Report Time</div><div class="info-value">19:40:04</div></div>
+                    <div class="info-item"><div class="info-label">Report Date</div><div class="info-value">2026-03-04</div></div>
+                    <div class="info-item"><div class="info-label">Report Time</div><div class="info-value">23:28:49</div></div>
                 </div>
             </div>
             
@@ -67,10 +67,10 @@
                 <div class="section-title">Statistics Summary</div>
                 <div class="stats-grid">
                     <div class="stat-card"><div class="stat-number">4</div><div class="stat-label">Total Resources</div></div>
-                    <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Total Variables</div></div>
+                    <div class="stat-card"><div class="stat-number">102</div><div class="stat-label">Total Variables</div></div>
                     <div class="stat-card success"><div class="stat-number">0</div><div class="stat-label">Duplicate Variables</div></div>
                     <div class="stat-card success"><div class="stat-number">0</div><div class="stat-label">depends_on References</div></div>
-                    <div class="stat-card warning"><div class="stat-number">6/7</div><div class="stat-label">Checks Passed</div></div>
+                    <div class="stat-card warning"><div class="stat-number">4/7</div><div class="stat-label">Checks Passed</div></div>
                 </div>
             </div>
             
@@ -86,7 +86,7 @@
                 <table>
                     <thead><tr><th>Best Practice Check</th><th>Status</th></tr></thead>
                     <tbody>
-                        <tr><td>Sensitive fields marked sensitive in variables.tf</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>No secrets in tfvars</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>Variables follow snake_case naming</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>No duplicate variable definitions</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>Tags defined as map(string) type</td><td><span class="status-fail">✗ Fail</span></td></tr><tr><td>tfvars uses HCL format (no interpolation)</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>depends_on uses explicit resource references</td><td><span class="status-pass">✓ Pass</span></td></tr>
+                        <tr><td>Sensitive fields marked sensitive in variables.tf</td><td><span class="status-fail">✗ Fail</span></td></tr><tr><td>No secrets in tfvars</td><td><span class="status-fail">✗ Fail</span></td></tr><tr><td>Variables follow snake_case naming</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>No duplicate variable definitions</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>Tags defined as map(string) type</td><td><span class="status-fail">✗ Fail</span></td></tr><tr><td>tfvars uses HCL format (no interpolation)</td><td><span class="status-pass">✓ Pass</span></td></tr><tr><td>depends_on uses explicit resource references</td><td><span class="status-pass">✓ Pass</span></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -99,20 +99,12 @@
             
             <div class="section">
                 <div class="section-title">Resources by Type</div>
-                <div class="resource-count"><span class="resource-name">azurerm_storage_account</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_app_environment</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_registry</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_app</span><span class="resource-number">1</span></div>
+                <div class="resource-count"><span class="resource-name">azurerm_storage_account</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_registry</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_app_environment</span><span class="resource-number">1</span></div><div class="resource-count"><span class="resource-name">azurerm_container_app</span><span class="resource-number">1</span></div>
             </div>
             
-            <div class="section">
-                <div class="section-title">Failed Resources</div>
-                <div style="background: #F8F9FA; padding: 15px; border-radius: 4px; border-left: 3px solid #DC3545;">
-                    <pre style="white-space: pre-wrap; font-size: 12px; color: #333;"># Failed Resources Report
-
-- **__refactor__**: 'stg_samcpstorage_samcpstorage_account_replication_type'
-</pre>
-                </div>
-            </div>
+            
         </div>
-        <div class="footer">Generated by Terraform Refactoring Engine | 2026-02-11 19:40:04</div>
+        <div class="footer">Generated by Terraform Refactoring Engine | 2026-03-04 23:28:49</div>
     </div>
 </body>
 </html>
