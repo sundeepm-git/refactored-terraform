@@ -1,0 +1,12 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and update with your values
+
+location            = "East US"
+resource_group_name = "rg-terraform-demo"
+environment         = "dev"
+
+tags = {
+  ManagedBy   = "Terraform"
+  Project     = "Azure Infrastructure"
+  Environment = "Development"
+}
